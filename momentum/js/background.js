@@ -2,8 +2,6 @@ const images = ["dj_max_01.png","dj_max_02.png","dj_max_03.png"];
 
 const chosenImage = images[Math.floor(Math.random() * images.length)];
 
-const bgImage = document.createElement("img");
+const url = `img/${chosenImage}`;
 
-bgImage.src = `img/${chosenImage}`;
-
-document.body.appendChild(bgImage);
+document.body.style.backgroundImage = "url("+url+")";

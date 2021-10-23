@@ -16,6 +16,6 @@ function onGeoOk(position) {
 }
 
 function onGeoError() {
-    alert("Fuck it's error");
+    alert("I can't find you.");
 }
 navigator.geolocation.getCurrentPosition(onGeoOk,onGeoError);
